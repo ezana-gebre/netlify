@@ -204,23 +204,25 @@ nav {
 
 @media (max-width: 1024px) {
     .menu {
-        display: none; /* Hide menu on smaller screens */
+        display: flex;
         flex-direction: column;
         order: 3;
         width: 100%;
-        margin-top: 1rem;
         position: absolute;
         top: 60px;
         left: 0;
         background: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu.active {
+        max-height: 500px;
     }
 
     .hamburger {
         display: block; /* Show hamburger on smaller screens */
-    }
-
-    .menu.active {
-        display: flex;
     }
 
     nav {
@@ -263,3 +265,4 @@ nav {
         border-bottom: 1px solid #ddd;
     }
 }
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
