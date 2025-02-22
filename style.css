@@ -30,6 +30,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
 .hamburger {
